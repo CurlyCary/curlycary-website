@@ -1,0 +1,121 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Arial Black', sans-serif;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* LOGO ANIMATION */
+.logo {
+  width: 180px;
+  border-radius: 50%;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px #ff6a00; }
+  to { box-shadow: 0 0 60px #ff6a00; }
+}
+
+/* TITLE */
+h1 {
+  font-size: 3rem;
+  color: #ff6a00;
+  text-shadow: 0 0 20px #ff6a00;
+}
+
+p {
+  letter-spacing: 2px;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  background: #ff6a00;
+  color: black;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* INSTAGRAM BUTTON */
+.insta {
+  margin-top: 10px;
+  color: #ff6a00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.insta:hover {
+  color: white;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  color: #ff6a00;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* INSTAGRAM GRID */
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.insta-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.insta-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: #111;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  .logo { width: 140px; }
+  .btn { padding: 12px 20px; }
+}
